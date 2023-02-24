@@ -10,11 +10,3 @@ const onIncrementBtn = (event) => {value.textContent = counterValue +=1};
 
 refs.decrementBtn.addEventListener('click', onDecrementBtn);
 refs.incrementBtn.addEventListener('click', onIncrementBtn);
-
-// function onDecrementBtn() {
-//     valueElement.textContent = counterValue -=1;
-// };
-
-// function onIncrementBtn() {
-//     valueElement.textContent = counterValue +=1;
-// };
