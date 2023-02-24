@@ -7,7 +7,7 @@ const onSubmitForm = (event) => {
 
     const { elements: { email, password } } = event.currentTarget;
 
-    if (email.value === '' || password.value === '') { alert('Заповніть, будь-ласка, всі поля!'); }
+    if (email.value === '' || password.value === '') { return alert('Заповніть, будь-ласка, всі поля!'); }
     
     const userData = { email: email.value, password: password.value }
     console.log(userData);

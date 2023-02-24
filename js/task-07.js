@@ -3,8 +3,10 @@ const refs = {
     output: document.querySelector('#text'),
 };
 
+refs.output.style.fontSize = `${refs.input.value}px`;
+
 const onSliderMove = (event) => {
     refs.output.style.fontSize = `${event.currentTarget.value}px`;
 }
 
-refs.input.addEventListener('change', onSliderMove);
+refs.input.addEventListener('input', onSliderMove);
